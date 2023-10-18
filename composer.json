@@ -1,0 +1,38 @@
+{
+  "name": "brucelwayne/laravel-package-ai",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruce Wayne"
+    }
+  ],
+  "require": {
+    "maltekuhr/laravel-gpt": "^v0.13"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Brucelwayne\\AI\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Brucelwayne\\AI\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Brucelwayne\\AI\\AIServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
+}
