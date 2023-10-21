@@ -1,9 +1,9 @@
 <?php
 namespace Brucelwayne\AI;
 
-use Inertia\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class AIServiceProvider extends ServiceProvider{
+class AIServiceProvider extends ServiceProvider {
 
     public function register(): void
     {
