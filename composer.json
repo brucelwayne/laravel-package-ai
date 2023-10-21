@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "maltekuhr/laravel-gpt": "^v0.13"
+    "maltekuhr/laravel-gpt": "^v0.1"
   },
   "require-dev": {
   },
