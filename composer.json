@@ -9,9 +9,7 @@
     }
   ],
   "require": {
-    "adrenallen/ai-agents-laravel": "^6.0",
-    "openai-php/laravel": "^0.10",
-    "maltekuhr/laravel-gpt": "^v0.1"
+    "adrenallen/ai-agents-laravel": "^6.0"
   },
   "require-dev": {
   },
