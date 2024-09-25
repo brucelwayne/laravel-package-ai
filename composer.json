@@ -1,41 +1,40 @@
 {
-    "name": "brucelwayne/laravel-package-ai",
-    "description": "",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Bruce Wayne"
-        }
-    ],
-    "require": {
-        "adrenallen/ai-agents-laravel": "^3.1",
-        "openai-php/laravel": "^0.6.3",
-        "maltekuhr/laravel-gpt": "^v0.1"
-    },
-    "require-dev": {
-
-    },
-    "autoload": {
-        "psr-4": {
-            "Brucelwayne\\AI\\": "src"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Brucelwayne\\AI\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Brucelwayne\\AI\\AIServiceProvider"
-            ],
-            "aliases": {
-            }
-        }
+  "name": "brucelwayne/laravel-package-ai",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruce Wayne"
     }
+  ],
+  "require": {
+    "adrenallen/ai-agents-laravel": "^6.0",
+    "openai-php/laravel": "^0.10",
+    "maltekuhr/laravel-gpt": "^v0.1"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Brucelwayne\\AI\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Brucelwayne\\AI\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Brucelwayne\\AI\\AIServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
 }
