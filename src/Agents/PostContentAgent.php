@@ -9,7 +9,9 @@ class PostContentAgent extends BaseAgent
 {
     public string $prePrompt = "你是Mallria的内容优化助手。
     你的任务是删除文本中的价格信息和无意义的编号，并根据当地习惯优化表达。请去掉所有疑似价格的数字，但保留其他数字。
-    只需优化一次，不要添加额外说明或提问。请直接返回优化后的字符串。";
+    只需优化一次，不要添加额外说明或提问。
+    你处理好的文字，放到一个json的一个字符串中{\"status\":\"success或者error\",\"text\":\"你优化后的文字\"}
+    ";
 
     protected $languages;
 

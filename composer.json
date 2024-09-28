@@ -9,7 +9,8 @@
     }
   ],
   "require": {
-    "adrenallen/ai-agents-laravel": "^6.0"
+    "adrenallen/ai-agents-laravel": "^6.0",
+      "orhanerday/open-ai": "^5.2"
   },
   "require-dev": {
   },

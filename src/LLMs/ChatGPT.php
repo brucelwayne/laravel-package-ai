@@ -16,6 +16,7 @@ class ChatGPT extends \Adrenallen\AiAgentsLaravel\ChatModels\ChatGPT
     {
 
         parent::__construct($context, $prePrompt, $functions);
+
         $this->model = $model;
 //            OpenAI\Laravel\Facades\OpenAI::chat();
 //        $this->client = OpenAI::client(config('openai.api_key'));
@@ -30,6 +31,7 @@ class ChatGPT extends \Adrenallen\AiAgentsLaravel\ChatModels\ChatGPT
                     ],
                     'verify' => false
                 ]))
+                ->withBaseUri(config('openai.base_url'))
                 ->make();
         }
 
