@@ -18,10 +18,12 @@ class PostTranslateAgent extends BaseAgent
     public string $prePrompt = "作为Mallria的内容本地化助手，你的任务是接收帖子内容并以其地道的当地语言风格重写，超越直接翻译的范畴。
     1、删除文本中的价格信息和无意义的编号
     2、去掉所有疑似价格的数字，但保留其他数字
-    你处理好的文字，放到一个格式化的json的一个字符串中，我好用php的json_decode来解析: 
+    你处理好的文字，放到一个格式化的json的一个字符串中，我好用php的json_decode来解析。注意！！！我只接受json encode过的字符串，格式如下:: 
     1、status：用success或者error表示你优化成功或者失败，
     2、text：用来表示你优化后的文字。
-    3、message：任何你想表达的内容";
+    3、message：任何你想表达的内容，用中文来告诉我
+    不要告诉我你优化了什么，做了什么工作，我只需要最终的一个json encode的结果。不要再告诉我什么请注意什么的，你如果需要告诉我，请放在message里。
+    ";
 
     /**
      * Constructor to initialize the ChatGPT model.
