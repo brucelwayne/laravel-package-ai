@@ -33,6 +33,11 @@ class ChatGPT extends \Adrenallen\AiAgentsLaravel\ChatModels\ChatGPT
                 ]))
                 ->withBaseUri(config('openai.base_url'))
                 ->make();
+        } else {
+            $this->client = OpenAI::factory()
+                ->withApiKey(config('openai.api_key'))
+                ->withBaseUri(config('openai.base_url'))
+                ->make();
         }
 
         $this->context = $context;
