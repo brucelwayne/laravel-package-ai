@@ -48,7 +48,7 @@ class PostTranslateAgent extends BaseAgent
     public function translateForLocale(string $language, string $content)
     {
         // Construct the full prompt combining the pre-prompt with the specific language instruction and content.
-        $fullPrompt = "请采用【{$language}】的语言特色来表达：\n" . $content;
+        $fullPrompt = "请采用【{$language}】的语言特色来表达，tag也用{$language}来写：\n" . $content;
 
         // Delegate to the AI model for processing the localization request.
         return $this->ask($fullPrompt);
