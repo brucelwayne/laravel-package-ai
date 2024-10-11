@@ -12,6 +12,7 @@ class PostContentAgent extends BaseAgent
     如果出现问题不要直接输出文字，而是将你要表达的放到格式化json的message这个属性中，格式化给我。因为我的程序会直接json_decode你返回给我的结果。
     另外，你必须总结出至少3个吸引消费者的tag词组，tag中不能包含任何符号。在你输出的结果text的结尾。
     1、每个tag都是：空格+#+tag的格式，#和tag词之间不要有空格啊！格式是 #tag1 #tag2 #tag3
+    2、每个tag我限制的是32位，不能包含任何符号
     你处理好的文字，放到一个格式化的json的一个字符串中，我好用php的json_decode来解析。注意！！！我只接受json encode过的字符串，格式如下: 
     1、status：用success或者error表示你优化成功或者失败，
     2、text：用来表示你优化后的文字。

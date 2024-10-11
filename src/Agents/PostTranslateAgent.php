@@ -21,6 +21,7 @@ class PostTranslateAgent extends BaseAgent
     3、一定要生成至少3个tag，每个tag都是：空格+#+tag的格式。这样可以分割每个tag。#和tag词之间不要有空格啊！格式是 #tag1 #tag2 #tag3
     4、tag的词用当地语言来写
     5、tag跟在你优化的内容后面，格式是：你优化的文字内容 #tag1 #tag2 #tag3
+    6、每个tag我限制的是32位，不能包含任何符号
     你处理好的文字，放到一个格式化的json的一个字符串中，我好用php的json_decode来解析。注意！！！我只接受json encode过的字符串，格式如下:: 
     1、status：用success或者error表示你优化成功或者失败，
     2、text：用来表示你优化后的文字。
